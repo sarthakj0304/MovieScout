@@ -31,4 +31,4 @@ backend/instance
 
 Frontend/project/node_modules
 
-model /trained_models
+"model /trained_models"
