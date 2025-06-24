@@ -31,7 +31,7 @@ npm run dev
 
 # How it works
 MovieScout combines collaborative filtering and content-based filtering to provide personalized movie recommendations through a swipe-based interface. Here's how the system works end to end:
-## Model Training (model_training.ipynb)
+**Model Training** (model_training.ipynb)
 
 - Datasets Used:
 
@@ -59,11 +59,11 @@ final_scores = ALPHA * svd_scores + (1 - ALPHA) * content_scores
 - Cold Start:
 A precomputed list of popular movies by genre is created for users with no prior interactions.
 
-##Model Saving
+**Model Saving**
 
 All trained models and scoring functions are saved (using Pickle or NumPy formats) in the model /trained_models/ directory to be loaded by the backend during inference.
 
-##Backend (Flask)
+**Backend (Flask)**
 
 - Blueprint Structure:
 
@@ -83,7 +83,7 @@ All trained models and scoring functions are saved (using Pickle or NumPy format
 
   UserInteraction model stores user_id, movie_id, rating, and timestamp.
 
-##Frontend (React)
+**Frontend (React)**
 
   - Folder Structure:
 
