@@ -30,3 +30,5 @@ backend/instance
 *.env
 
 Frontend/project/node_modules
+
+model /trained_models
